@@ -1,7 +1,7 @@
 package com.dni.web.entity;
 import java.util.Date;
 
-public class Users {
+public class Member {
 	private String id;
 	private String name;
 	private String email;

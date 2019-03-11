@@ -2,18 +2,18 @@ package com.dni.web.dao;
 
 import java.util.List;
 
-import com.dni.web.entity.Users;
+import com.dni.web.entity.Member;
 
-public interface UsersDao {
-	int insert(Users users);
-	int update(Users users);
+public interface MemberDao {
+	int insert(Member users);
+	int update(Member users);
 	int delete(String id);
 	
-	Users get(String id);
-	List<Users> getList();
-	List<Users> getList(int page);
-	List<Users> getList(String field, String name);
-	List<Users> getList(String field, String name, int page);
-	Users getByEmail(String email);
+	Member get(String id);
+	List<Member> getList();
+	List<Member> getList(int page);
+	List<Member> getList(String field, String name);
+	List<Member> getList(String field, String name, int page);
+	Member getByEmail(String email);
 	
 }

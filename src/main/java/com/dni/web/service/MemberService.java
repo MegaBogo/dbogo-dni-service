@@ -1,5 +1,5 @@
 package com.dni.web.service;
 
-public class UserService {
+public class MemberService {
 
 }

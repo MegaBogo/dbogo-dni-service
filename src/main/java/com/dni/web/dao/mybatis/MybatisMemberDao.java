@@ -2,21 +2,21 @@ package com.dni.web.dao.mybatis;
 
 import java.util.List;
 
-import com.dni.web.dao.UsersDao;
-import com.dni.web.entity.Users;
+import com.dni.web.dao.MemberDao;
+import com.dni.web.entity.Member;
 
-public class MybatisUsersDao implements UsersDao{
+public class MybatisMemberDao implements MemberDao{
 
 	
 	
 	@Override
-	public int insert(Users users) {
+	public int insert(Member users) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int update(Users users) {
+	public int update(Member users) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -28,37 +28,37 @@ public class MybatisUsersDao implements UsersDao{
 	}
 
 	@Override
-	public Users get(String id) {
+	public Member get(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Users> getList() {
+	public List<Member> getList() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Users> getList(int page) {
+	public List<Member> getList(int page) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Users> getList(String field, String name) {
+	public List<Member> getList(String field, String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Users> getList(String field, String name, int page) {
+	public List<Member> getList(String field, String name, int page) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Users getByEmail(String email) {
+	public Member getByEmail(String email) {
 		// TODO Auto-generated method stub
 		return null;
 	}
