@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.dni.web.dao.SubwayDao;
+import com.dni.web.entity.Member;
 import com.dni.web.entity.Subway;
 
 @Repository
@@ -40,9 +41,21 @@ public class MybatisSubwayDao implements SubwayDao {
 	}
 
 	@Override
-	public List<Subway> getList() {
+	public List<Subway> getList(int page) {
 		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
-		return subwayDao.getList();
+		return subwayDao.getList(page);
+	}
+
+	@Override
+	public List<Subway> getList(String field, String name) {
+		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
+		return subwayDao.getList(field, name);
+	}
+
+	@Override
+	public List<Subway> getList(String field, String name, int page) {
+		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
+		return subwayDao.getList(field, name, page);
 	}
 
 }
