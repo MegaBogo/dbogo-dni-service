@@ -5,8 +5,8 @@ import java.util.List;
 import com.dni.web.entity.Member;
 import com.dni.web.entity.Subway;
 
-public interface ViewManagementService {
-	public Member getMember();
+public interface MemberService {
+	public Member getMember(String id);
 	public List<Member> getMemberList();
 	public int addMember(Member member);
 }

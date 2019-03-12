@@ -4,12 +4,12 @@ import java.util.List;
 
 import com.dni.web.entity.Member;
 import com.dni.web.entity.Subway;
-import com.dni.web.service.ViewManagementService;
+import com.dni.web.service.MemberService;
 
-public class MybatisViewManagementService implements ViewManagementService {
+public class MybatisMemberService implements MemberService {
 
 	@Override
-	public Member getMember() {
+	public Member getMember(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
