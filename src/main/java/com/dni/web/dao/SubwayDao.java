@@ -9,6 +9,7 @@ public interface SubwayDao {
 	int delete(int id);	
 	
 	Subway get(int id);
+	List<Subway> getList();
 	List<Subway> getList(int page);
 	List<Subway> getList(String field, String name);
 	List<Subway> getList(String field, String name, int page);

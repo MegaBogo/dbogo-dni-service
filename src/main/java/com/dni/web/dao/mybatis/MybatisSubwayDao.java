@@ -41,6 +41,13 @@ public class MybatisSubwayDao implements SubwayDao {
 	}
 
 	@Override
+	public List<Subway> getList() {
+		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
+		return subwayDao.getList();
+	}
+
+	
+	@Override
 	public List<Subway> getList(int page) {
 		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
 		return subwayDao.getList(page);

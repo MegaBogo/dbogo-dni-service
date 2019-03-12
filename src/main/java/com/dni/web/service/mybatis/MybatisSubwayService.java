@@ -20,8 +20,7 @@ public class MybatisSubwayService implements SubwayService{
 
 	@Override
 	public List<Subway> getSubwayList() {
-		// TODO Auto-generated method stub
-		return null;
+		return subwayDao.getList();
 	}
 
 	@Override
