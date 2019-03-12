@@ -1,5 +1,11 @@
 package com.dni.web.service;
 
-public class SubwayService {
+import java.util.List;
 
+import com.dni.web.entity.Subway;
+
+public interface SubwayService {
+	public Subway getSubway();
+	public List<Subway> getSubwayList();
+	public int addSubway(Subway subway);
 }
