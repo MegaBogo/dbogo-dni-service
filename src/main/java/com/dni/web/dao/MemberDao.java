@@ -5,8 +5,8 @@ import java.util.List;
 import com.dni.web.entity.Member;
 
 public interface MemberDao {
-	int insert(Member users);
-	int update(Member users);
+	int insert(Member member);
+	int update(Member member);
 	int delete(String id);
 	
 	Member get(String id);
