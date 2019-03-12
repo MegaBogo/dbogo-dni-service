@@ -17,7 +17,13 @@ public class MybatisSubwayService implements SubwayService{
 	public Subway getSubway(String userId) {
 		return subwayDao.get(userId);
 	}
+	
+	@Override
+	public Subway getSubway(String userId, int id) {
+		return subwayDao.get(userId, id);
+	}
 
+	
 	@Override
 	public List<Subway> getSubwayList() {
 		return subwayDao.getList();
@@ -25,8 +31,7 @@ public class MybatisSubwayService implements SubwayService{
 
 	@Override
 	public int addSubway(Subway subway) {
-		// TODO Auto-generated method stub
-		return 0;
+		return subwayDao.insert(subway);
 	}
 
 }
