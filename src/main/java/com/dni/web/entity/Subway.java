@@ -7,6 +7,7 @@ public class Subway {
 	private String departingStation;
 	private String arrivalStation;
 	private String duration;
+	private String regUserId;
 	private Date regDate;
 	private Date modifyDate;
 	private boolean stop;
@@ -35,6 +36,12 @@ public class Subway {
 	public void setDuration(String duration) {
 		this.duration = duration;
 	}
+	public String getRegUserId() {
+		return regUserId;
+	}
+	public void setRegUserId(String regUserId) {
+		this.regUserId = regUserId;
+	}
 	public Date getRegDate() {
 		return regDate;
 	}
@@ -57,7 +64,7 @@ public class Subway {
 	@Override
 	public String toString() {
 		return "Subway [id=" + id + ", departingStation=" + departingStation + ", arrivalStation=" + arrivalStation
-				+ ", duration=" + duration + ", regDate=" + regDate + ", modifyDate=" + modifyDate + ", stop=" + stop
-				+ "]";
+				+ ", duration=" + duration + ", regUserId=" + regUserId + ", regDate=" + regDate + ", modifyDate="
+				+ modifyDate + ", stop=" + stop + "]";
 	}
 }

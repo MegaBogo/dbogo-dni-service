@@ -4,8 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.dni.web.dao.SubwayDao">
 	<insert id="insert" parameterType="com.dni.web.entity.Subway">
-		insert into Subway(id, departingStation, arrivalStation, duration)
-		values(#{id}, #{departingStation}, #{arrivalStation}, #{duration})
+		insert into Subway(regUserId, departingStation, arrivalStation, duration)
+		values(#{regUserId}, #{departingStation}, #{arrivalStation}, #{duration})
 	</insert>
 	<update id="update" parameterType="com.dni.web.entity.Subway">
 		update [Subway]
@@ -17,8 +17,13 @@
 	<delete id="delete" parameterType="String">
 		delete from Subway where id = #{param1}
 	</delete>
+	<select id="get" parameterType="String" resultType="com.dni.web.entity.Subway">
+		select * from Subway where regUserId = '${param1}'
+	</select>
 	<select id="get" resultType="com.dni.web.entity.Subway">
-		select * from Subway where id = #{param1}
+		select * from Subway
+		where regUserId = '${param1}'
+		  and id = #{param2}
 	</select>
 	<select id="getList" resultType="com.dni.web.entity.Subway">
 		select * from Subway

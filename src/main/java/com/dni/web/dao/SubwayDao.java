@@ -8,7 +8,8 @@ public interface SubwayDao {
 	int update(Subway subway);
 	int delete(int id);	
 	
-	Subway get(int id);
+	Subway get(String regUserId);
+	Subway get(String regUserId, int id);
 	List<Subway> getList();
 	List<Subway> getList(int page);
 	List<Subway> getList(String field, String name);

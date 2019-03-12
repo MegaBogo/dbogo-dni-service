@@ -14,8 +14,8 @@ public class MybatisSubwayService implements SubwayService{
 	private SubwayDao subwayDao;
 
 	@Override
-	public Subway getSubway(int id) {
-		return subwayDao.get(id);
+	public Subway getSubway(String userId) {
+		return subwayDao.get(userId);
 	}
 
 	@Override

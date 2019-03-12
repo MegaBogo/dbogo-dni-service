@@ -35,9 +35,15 @@ public class MybatisSubwayDao implements SubwayDao {
 	}
 
 	@Override
-	public Subway get(int id) {
+	public Subway get(String regUserId) {
 		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
-		return subwayDao.get(id);
+		return subwayDao.get(regUserId);
+	}
+	
+	@Override
+	public Subway get(String regUserId, int id) {
+		SubwayDao subwayDao = sqlSession.getMapper(SubwayDao.class);
+		return subwayDao.get(regUserId);
 	}
 
 	@Override
