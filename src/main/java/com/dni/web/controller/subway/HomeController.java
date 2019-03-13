@@ -33,6 +33,5 @@ public class HomeController {
 		 model.addAttribute("subway", subway);
 		 
 		 return "subway.view";
-		 
 	 }
 }
