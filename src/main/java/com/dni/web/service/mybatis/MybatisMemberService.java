@@ -28,4 +28,23 @@ public class MybatisMemberService implements MemberService {
 		return memberDao.insert(member);
 	}
 
+	@Override
+	public boolean isEmailDuplicated(String email) {
+		Member member = memberDao.getByEmail(email);
+		
+		if(member != null)
+			return true;
+		
+		return false;
+	}
+
+	@Override
+	public boolean isIdDuplicated(String id) {
+		Member member = memberDao.get(id);
+		if(member != null) 
+			return true;
+		
+		return false;
+	}
+
 }
