@@ -2,8 +2,9 @@ package com.dni.web.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.dni.web.entity.Member;
-import com.dni.web.entity.Subway;
 
 public interface MemberService {
 	public Member getMember(String id);

@@ -3,11 +3,13 @@ package com.dni.web.service.mybatis;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.dni.web.dao.MemberDao;
 import com.dni.web.entity.Member;
 import com.dni.web.service.MemberService;
 
+@Service
 public class MybatisMemberService implements MemberService {
 
 	@Autowired

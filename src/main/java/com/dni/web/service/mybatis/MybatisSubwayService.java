@@ -3,11 +3,13 @@ package com.dni.web.service.mybatis;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.dni.web.dao.SubwayDao;
 import com.dni.web.entity.Subway;
 import com.dni.web.service.SubwayService;
 
+@Service
 public class MybatisSubwayService implements SubwayService{
 	
 	@Autowired
