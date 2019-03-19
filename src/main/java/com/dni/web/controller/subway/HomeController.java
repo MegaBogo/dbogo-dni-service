@@ -43,7 +43,7 @@ public class HomeController {
 	 	 
 	 @GetMapping("/{id}")
 	 public String index(Principal principal, @PathVariable("id") int id, Model model) {
-		 //Spring Security 현재 세션 사용자의 정보 
+		 //Spring Security 현재 세션 사용자의 정보
 		 String userId = principal.getName();
 		 Subway subway = subwayService.getSubway(userId, id);
 		 model.addAttribute("subway", subway);
