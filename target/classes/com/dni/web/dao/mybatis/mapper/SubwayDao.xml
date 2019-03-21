@@ -20,7 +20,9 @@
 	<select id="get" resultType="com.dni.web.entity.Subway">
 		select * from Subway
 		where regUserId = '${param1}'
+		  <if test="param2 != null">
 		  and id = #{param2}
+		  </if>
 	</select>
 	<select id="getList" resultType="com.dni.web.entity.Subway">
 		select * from Subway

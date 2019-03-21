@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <div>
 	<form method="post" id="frm-submit">
-		<input type="text" name="departingStation" />
-		<input type="text" name="arrivalStation" />
-		<input type="text" name="duration" />
+		출발역 : <input type="text" name="departingStation" />
+		도착역 : <input type="text" name="arrivalStation" />
+		알림시간 : <input type="text" name="duration" />
 	</form>
 </div>
